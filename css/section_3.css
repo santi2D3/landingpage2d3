@@ -1,0 +1,129 @@
+
+.container-web-medida{
+    width: 100%;
+    background: var(--blanco);
+    padding: 80px 0;
+}
+
+.container-web-medida h2{
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--blueDos);
+    text-align: center;
+    margin-bottom: 40px;   
+}
+
+.container-web-medida article{
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-web-medida .figure-uno{
+    width: 50%;
+    max-width: 470px;
+    height: 680px;
+    padding: 25px;
+    background: var(--grisUno);
+   
+}
+
+.container-web-medida .figure-uno div{
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--blueUno);
+}
+.container-web-medida .figure-uno img{
+    width: 100%;
+    padding: 20px;
+    transition: all 3s ease;   
+    
+}
+.container-web-medida .figure-uno img:hover{
+    transform: scale(1.2);
+}
+
+.container-web-medida .figure-uno figcaption{
+    color: var(--grisDos);
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.container-web-medida .figure-dos{
+    width: 50%;
+    max-width: 470px;
+    height: 680px;
+    padding: 25px;
+    background: var(--grisUno);
+}
+
+.container-web-medida .figure-dos div{
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--blueUno);
+}
+.container-web-medida .figure-dos img{
+    width: 100%;
+    padding: 20px;
+    transition: all 3s ease; 
+
+}
+
+.container-web-medida .figure-dos img:hover{
+    transform: scale(1.2);
+}
+
+.container-web-medida .figure-dos figcaption{
+    color: var(--grisDos);
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+
+
+/* ====== MEDIA QUERYS ========= */
+
+@media (max-width:850px){
+    .container-web-medida article{
+        width: 95%;
+    }
+    .container-web-medida .figure-uno{
+        width: 350px;
+        height: 730px;
+    }
+    .container-web-medida .figure-dos{
+        width: 350px;
+        height: 730px;
+    }
+
+}
+
+@media (max-width:450px){
+    .container-web-medida{
+        padding-top: 35px;
+    }
+    .container-web-medida .figure-dos{
+        margin-top: 40px;
+    }
+
+    .container-web-medida h2{
+        width: 70%;
+        margin: auto;
+        line-height: 1.2em;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .container-web-medida .figure-uno{
+        width: 350px;
+        height: 650px;
+    }
+}
+
+
+
+
+

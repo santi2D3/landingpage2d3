@@ -1,0 +1,34 @@
+.modal{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    visibility: hidden;
+
+}
+
+.modal .modal-content{
+    width: 50%;
+    height: 600px;
+    background: var(--blanco);
+
+}
+
+.motionModal{
+    animation: motionModal .4s ease;
+}
+
+@keyframes motionModal{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
