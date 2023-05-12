@@ -66,6 +66,11 @@ header nav ul li a{
     color: var(--blanco);
 }
 
+header nav .icon-wp{
+    width: 18px;
+    transform: translate(-5px,4px);
+}
+
 
 /* ====== MEDIA QUERYS 850PX ======= */
 
