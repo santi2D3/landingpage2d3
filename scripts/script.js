@@ -76,6 +76,29 @@ const changeHeader = ()=>{
 
    btnOpen.addEventListener('click', openModal)
 
+
+
+   /* ====== Elementos Observer ======= */
+
+   const element = document.querySelector('.container-web-medida')
+   console.log(element)
+   const observar = (item)=>{
+      if(item.isIntersecting){
+        console.log(item.target + 'observado')
+      }
+   }
+
+   const opciones = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+}
+
+
+   const observador = new IntersectionObserver(observar, opciones)
+   observador.observe(element)
+
+
  
 
 

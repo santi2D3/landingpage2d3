@@ -1,0 +1,34 @@
+@keyframes zoomIn{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes inLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    to{
+        opacity: 1;
+        transform: scale(0);
+    }
+}
+@keyframes inRight{
+    from{
+        opacity: 0;
+        transform: translateX(250px);
+    }
+    to{
+        opacity: 1;
+        transform: scale(0);
+    }
+}
+
+.motionZoom{
+    animation: zoomIn 1s ease;
+}
+

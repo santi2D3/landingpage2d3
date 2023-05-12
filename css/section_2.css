@@ -1,3 +1,5 @@
+@import 'animations.css';
+
 
 .container-landing-pages{
     width: 100%;
@@ -13,7 +15,8 @@
     padding: 13px 0;
     background: var(--blueUno);
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);   
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    opacity: 0; 
 }
 
 .container-landing-pages header h2{
