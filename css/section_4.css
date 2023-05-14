@@ -44,7 +44,15 @@
     width: 50%;
     position: relative;
     z-index: 100;
+    opacity: 0;
+    transform: translateX(-250px);
 }
+.container-web-cms article figure.motion-translate{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
 .container-web-cms article figure .image-cms{
     width: 650px;
 }

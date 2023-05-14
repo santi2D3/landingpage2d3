@@ -29,7 +29,14 @@
     height: 680px;
     padding: 25px;
     background: var(--grisUno);
+    opacity: 0;
+    transform: translate(-250px); 
    
+}
+.figure-uno.motion-translate{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
 }
 
 .container-web-medida .figure-uno div{
@@ -40,9 +47,13 @@
 .container-web-medida .figure-uno img{
     width: 100%;
     padding: 20px;
-    transition: all 3s ease;   
+    transition: all 3s ease;
+    
     
 }
+
+
+
 .container-web-medida .figure-uno img:hover{
     transform: scale(1.2);
 }
@@ -59,6 +70,13 @@
     height: 680px;
     padding: 25px;
     background: var(--grisUno);
+    transform: translateX(250px);
+    opacity: 0;
+}
+.figure-dos.motion-translate{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
 }
 
 .container-web-medida .figure-dos div{

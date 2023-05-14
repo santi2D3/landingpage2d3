@@ -80,23 +80,26 @@ const changeHeader = ()=>{
 
    /* ====== Elementos Observer ======= */
 
-   const element = document.querySelector('.container-web-medida')
+   const element = document.querySelectorAll('.observe')
    console.log(element)
-   const observar = (item)=>{
-      if(item.isIntersecting){
-        console.log(item.target + 'observado')
-      }
+
+   const observar = (items)=>{
+      items.forEach(item =>{  
+    if(item.isIntersecting){
+        // console.log(item.target + 'observado')
+        item.target.classList.add('motion-translate');        
+      }})
    }
 
    const opciones = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0.4
 }
 
 
-   const observador = new IntersectionObserver(observar, opciones)
-   observador.observe(element)
+   const observador = new IntersectionObserver(observar, opciones);
+   element.forEach(items => observador.observe(items))
 
 
  

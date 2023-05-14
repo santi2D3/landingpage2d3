@@ -1,6 +1,5 @@
 @import 'animations.css';
 
-
 .container-landing-pages{
     width: 100%;
     background: var(--blueDos);
@@ -16,7 +15,7 @@
     background: var(--blueUno);
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-    opacity: 0; 
+
 }
 
 .container-landing-pages header h2{
@@ -43,6 +42,14 @@
 .container-landing-pages .contenido-1 img{
     width: 50%;
     max-width: 500px;
+    opacity: 0;
+    transform: translateX(250px);
+}
+
+.contenido-1 img.motion-translate{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
 }
 
 .container-landing-pages .contenido-1 p{
@@ -65,13 +72,24 @@
     width: 50%;
     max-width: 500px;
     margin-right: 70px;
+    opacity: 0;
+    transform: translateX(-250px);
 }
+
+.contenido-2 img.motion-translate{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
 
 .container-landing-pages .contenido-2 p{
     color: var(--blanco);
     font-size: 20px;
     width: 50%;
 }
+
+
 
 
 /* ====== media querys ========*/
