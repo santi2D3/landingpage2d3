@@ -1,4 +1,27 @@
 
+  /* ====== change color header ======= */
+
+  const logo = document.querySelector('#img-logo')
+  const numberCel = document.querySelector('#cel')
+  
+  const changeHeader = ()=>{
+     const header = document.querySelector('#header');
+     let scrollValue = window.scrollY;
+  
+     if(scrollValue > 130){
+      logo.src="./images/logo_2D3_alpha_2.png";
+      header.classList.add('header--active');
+      numberCel.classList.add('cel-active');
+     }else{
+      header.classList.remove('header--active');
+      logo.src= "./images/logo_2D3_alpha.png";
+      numberCel.classList.remove('cel-active');
+  
+     }
+   }
+   
+   window.addEventListener('scroll', changeHeader)
+
 //=======  slider home =====
 
  // ======= slider home cohete ======
@@ -35,31 +58,6 @@ const swiper = new Swiper( sliderHome, {
       },      
   });
 
-
-
-  /* ====== change color header ======= */
-
-const logo = document.querySelector('#img-logo')
-const numberCel = document.querySelector('#cel')
-
-const changeHeader = ()=>{
-   const header = document.querySelector('#header');
-   let scrollValue = window.scrollY;
-
-   if(scrollValue > 130){
-    logo.src="./images/logo_2D3_alpha_2.png";
-    header.classList.add('header--active');
-    numberCel.classList.add('cel-active');
-   }else{
-    header.classList.remove('header--active');
-    logo.src= "./images/logo_2D3_alpha.png";
-    numberCel.classList.remove('cel-active');
-
-   }
- }
- 
- window.addEventListener('scroll', changeHeader)
-
    /* ====== MODAL pop up ======= */
 
   //  const modal = document.querySelector('#modal');
@@ -94,7 +92,7 @@ const changeHeader = ()=>{
    const opciones = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.4
+    threshold: 0.2
 }
 
 
