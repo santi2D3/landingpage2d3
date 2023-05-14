@@ -30,9 +30,9 @@ const swiper = new Swiper( sliderHome, {
     // scrollbar: {
     //   el: '.swiper-scrollbar',
     // },
-    // autoplay: {
-    //     delay: 5000,
-    //   },      
+    autoplay: {
+        delay: 7000,
+      },      
   });
 
 

@@ -51,8 +51,15 @@
     background: var(--primary);
     border-radius: 5px;    
     margin-top: 10px;
-    border: none;    
+    border: none;
+    transition: all .3s;    
 }
+
+.container-info-1 button:hover{
+    background: transparent;
+    border: 2px solid var(--primary);
+}
+
 .container-info-1 button a{
     color: var(--blanco);
     text-decoration: none;
