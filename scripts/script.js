@@ -62,19 +62,19 @@ const changeHeader = ()=>{
 
    /* ====== MODAL pop up ======= */
 
-   const modal = document.querySelector('#modal');
-   const btnOpen = document.querySelector('#btn-open-modal');
-   const contentModal = document.querySelector('.modal-content');
+  //  const modal = document.querySelector('#modal');
+  //  const btnOpen = document.querySelector('#btn-open-modal');
+  //  const contentModal = document.querySelector('.modal-content');
 
-   const openModal = ()=>{
-     modal.style.visibility = 'visible';
-     contentModal.classList.toggle('motionModal')
-   }
-   modal.addEventListener('click', ()=>{
-    modal.style.visibility = 'hidden';
-   })
+  //  const openModal = ()=>{
+  //    modal.style.visibility = 'visible';
+  //    contentModal.classList.toggle('motionModal')
+  //  }
+  //  modal.addEventListener('click', ()=>{
+  //   modal.style.visibility = 'hidden';
+  //  })
 
-   btnOpen.addEventListener('click', openModal)
+  //  btnOpen.addEventListener('click', openModal)
 
 
 
