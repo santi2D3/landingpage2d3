@@ -11,3 +11,20 @@
 .btn-wp img{
     width: 100%;
 }
+
+
+/* ===== Media querys ==== */
+
+@media (max-width:850px){
+    .btn-wp{
+        width: 10%;
+    }
+}
+
+@media (max-width:450px){
+    .btn-wp{
+        width: 12%;
+        margin-right: 3px;
+
+    }
+}
