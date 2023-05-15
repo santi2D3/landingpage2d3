@@ -52,8 +52,6 @@
     
 }
 
-
-
 .container-web-medida .figure-uno img:hover{
     transform: scale(1.2);
 }
@@ -70,12 +68,11 @@
     height: 680px;
     padding: 25px;
     background: var(--grisUno);
-    transform: translateX(250px);
     opacity: 0;
 }
 .figure-dos.motion-translate{
     opacity: 1;
-    transform: translateX(0);
+    /* transform: translateX(0); */
     transition: all 1s;
 }
 

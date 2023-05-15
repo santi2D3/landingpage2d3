@@ -42,13 +42,10 @@
 .container-landing-pages .contenido-1 img{
     width: 50%;
     max-width: 500px;
-    opacity: 0;
-    transform: translateX(250px);
-}
+    opacity: 0;}
 
 .contenido-1 img.motion-translate{
     opacity: 1;
-    transform: translateX(0);
     transition: all 1s;
 }
 
