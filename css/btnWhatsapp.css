@@ -1,0 +1,13 @@
+
+.btn-wp{
+    width: 4%;
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    margin: 0 7px 10px 0;
+    z-index: 1000;
+}
+
+.btn-wp img{
+    width: 100%;
+}
