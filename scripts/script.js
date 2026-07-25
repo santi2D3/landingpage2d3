@@ -100,6 +100,12 @@ const swiper = new Swiper( sliderHome, {
    element.forEach(items => observador.observe(items))
 
 
+
+
+
+ 
+
+
  
 
 
